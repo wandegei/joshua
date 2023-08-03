@@ -1,0 +1,18 @@
+.blog-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns per row */
+    gap: 20px; /* Adjust the gap between columns */
+  }
+  
+  .blog-column {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+  
+  .blog-column img {
+    width: 100%;
+    max-height: 200px; /* Set a maximum height for images */
+    object-fit: cover; /* Preserve aspect ratio of images */
+  }
+  
