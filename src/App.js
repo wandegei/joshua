@@ -5,7 +5,7 @@ import './components/BlogPage.css';
 function App() {
   return (
     <div>
-      <h1>My Blog Page</h1>
+      <h1>Welcome to my Blog page</h1>
       <BlogPage />
     </div>
   );
