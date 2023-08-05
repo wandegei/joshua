@@ -1,38 +1,209 @@
+/* Reset default margins and paddings */
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Body font and background color */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
 .App {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin-right: 20px;
+  display: inline-block;
+}
+
+main {
+  margin-top: 30px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  header {
+    padding: 10px 0;
+  }
+
+  nav ul li {
+    margin-right: 10px;
+  }
+
+  main {
+    margin-top: 20px;
+  }
+}
+
+/* Styling the button */
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Footer styles */
+footer {
+  margin-top: 30px;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+}
+
+/* Main content styles */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* Styling the button in the main content */
+main button {
+  border-radius: 5px;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+main button:hover {
+  background-color: #0056b3;
+}
+
+/* Styling for the Font Awesome icon */
+main i {
+  margin-right: 5px;
+}
+/* Hero section styles */
+.hero {
+  background-color: #007bff;
+  color: #fff;
+  padding: 60px 0;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+}
+
+/* Call-to-action section styles */
+.cta {
+  background-color: #0056b3;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.cta h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.cta p {
+  font-size: 1.2rem;
+}
+/* Testimonials section styles */
+.testimonials {
+  background-color: #f0f0f0;
+  padding: 40px 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.testimonials h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.testimonial {
+  margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.testimonial p {
+  font-size: 1.1rem;
+}
+
+.testimonial span {
+  font-weight: bold;
+}
+
+/* Responsive Navigation Menu */
+nav {
+  background-color: #333;
+  
+  top: 0;
+  z-index: 999;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+nav ul li {
+  margin-right: 20px;
+  display: inline-block;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Mobile responsiveness for navigation menu */
+@media (max-width: 600px) {
+  nav ul li {
+    margin-right: 10px;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+/* Back to Top button styles */
+#back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+#back-to-top:hover {
+  background-color: #0056b3;
 }
